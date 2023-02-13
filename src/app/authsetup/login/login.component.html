@@ -1,0 +1,52 @@
+<form [formGroup]="loginform">
+    <div class="login_cls grid text-center m-0 p-0">
+        <div class="col-12 lg:col-4 md:col-4 sm:col-4 m-0 p-0 login">
+            <div class="col-12 lg:col-12 md:col-12 sm:col-12">
+                <img src="./../../../assets/logo/apartlogo.png" width="150px" />
+            </div>
+            <div class="col-12 lg:col-12 md:col-12 sm:col-12 text-center px-8">
+                <input type="email" pInputText class="w-full inp_foc" placeholder="Email" formControlName="Email" />
+                <div class="block text-left pt-1"
+                    *ngIf="loginform.get('Email').invalid &&(loginform.get('Email').dirty || loginform.get('Email').touched)">
+                    <div class="block text-left pt-1" *ngIf="loginform.get('Email').errors.required">Email is required
+                    </div>
+                    <div class="block text-left pt-1" *ngIf="loginform.get('Email').errors.pattern">Email must be a
+                        valid email address</div>
+                </div>
+            </div>
+
+            <div class="col-12 lg:col-12 md:col-12 sm:col-12 px-8 relative">
+                <input name="password" pInputText [type]="showPassword ? 'text' : 'Password'" class="w-full inp_foc "
+                    id="password-field" placeholder="Password" formControlName="Password">
+                <div class="absolute show">
+                    <i alt="show" class="pi pi-eye text-xl" (click)="showPassword = !showPassword"
+                        [class.hide]="showPassword"></i>
+                    <i alt="hide" class="pi pi-eye-slash text-xl" (click)="showPassword = !showPassword"
+                        [class.hide]="!showPassword"></i>
+                </div>
+                <div class="block text-left font-sm pt-1"
+                    *ngIf="loginform.get('Password').invalid && (loginform.get('Password').dirty || loginform.get('Password').touched)">
+                    <div class="block text-left pt-1" *ngIf="loginform.get('Password').errors.required">Password is
+                        required
+                    </div>
+                    <div class="block text-left pt-1" *ngIf="loginform.get('Password').errors.pattern">Password must be
+                        a
+                        valid</div>
+
+                    <!-- <div class="block text-left pt-1" *ngIf="control.hasError('trimError')">
+                        control.errors.trimError.value </div> -->
+                </div>
+            </div>
+            <div class="col-12 lg:col-12 md:col-12 sm:col-12 px-8">
+                <button pButton type="button" pRipple [disabled]="!loginform.valid" label="Login" icon="pi pi-user" class="p-button font-normal cursor-pointer"></button>
+            </div>
+            <div class="col-12 lg:col-12 md:col-12 sm:col-12">
+                <div class="grid m-0">
+                    <div class="col-12 lg:col-12">
+                        <a href="" class="no-underline link text-sm">Forgot password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

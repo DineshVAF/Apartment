@@ -1,0 +1,39 @@
+<div class="side_layouts m-0" [@animationsidebar]="layoutservice.isBoolean == true ? 'open' : 'close'">
+    <div class="logo">
+        <div class="side-img">
+            <img src="./../../../../assets/logo/apartlogo.png" width="100px">
+        </div>
+        <div class="side-list">
+            <ul type="none"  class="side_lists  py-2">
+                <li>
+                    <i class="fa-solid fa-pen-to-square pr-2"></i>
+                    <a [routerLink]="['/layout/apartment-details']" class="no-underline ">Apartment Details</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user pr-2"></i>
+                    <a [routerLink]="['/layout/members']"class="no-underline ">Members</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-building pr-2"></i>
+                    <a [routerLink]="['/layout/room']" class="no-underline ">Room</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-plus pr-2"></i>
+                    <a [routerLink]="['/layout/add-members']" class="no-underline ">Add Members</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-arrow-up-right-from-square pr-2"></i>
+                    <a [routerLink]="['/layout/petition']"  class="no-underline ">Suggestions</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-building pr-2"></i>
+                    <a [routerLink]="['/layout/room-design']" class="no-underline ">Room Design</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-calendar-week pr-2"></i>
+                    <a [routerLink]="['/layout/availability']" class="no-underline ">Availability</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

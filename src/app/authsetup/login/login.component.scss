@@ -1,0 +1,40 @@
+ .login_cls {
+     display: grid;
+     place-items: center;
+     border: 1px solid;
+     border: none;
+     height: 100vh;
+     width: 100%;
+     background-image: linear-gradient(to right, #E5DDDB, #70ACE0);
+ }
+
+ .login {
+     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+     border-radius: 10px;
+
+ }
+
+ :host ::ng-deep .p-button .p-button-icon-left {
+     font-size: 12px;
+ }
+
+ .block {
+     color: red;
+ }
+
+ .hide {
+     display: none;
+ }
+
+ .show {
+     top: 20px;
+     right: 100px;
+ }
+
+ :host ::ng-deep.p-inputtext.ng-dirty.ng-invalid {
+     padding: 10px 40px 10px 10px;
+
+ }
+
+
+

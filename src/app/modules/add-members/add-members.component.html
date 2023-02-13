@@ -1,0 +1,106 @@
+<div [@animationsidebar]="layoutservice.isBoolean == true ? 'open' : 'close'">
+    <p-steps class="step" [model]="items" [(activeIndex)]="activeIndex"></p-steps>
+    <div *ngIf="activeIndex===0">
+        <p-card>
+            <ng-template pTemplate="title">
+                User Information
+            </ng-template>
+            <ng-template pTemplate="subtitle">
+                Enter your user information
+            </ng-template>
+            <ng-template pTemplate="content">
+                <form [formGroup]="memberform">
+                    <div class="p-fluid field">
+                        <label for="firstname">Firstname</label>
+                        <input type="text" pInputText formControlName="firstname" />
+                    </div>
+                    <div class="p-fluid field">
+                        <label for="lastname">Lastname</label>
+                        <input type="text" pInputText formControlName="lastname" />
+                    </div>
+                    <div class="p-fluid field">
+                        <label for="age">Age</label>
+                        <input type="number" pInputText formControlName="number" />
+                    </div>
+                </form>
+            </ng-template>
+            <ng-template pTemplate="footer">
+                <div class="grid grid-nogutter justify-content-end">
+                    <p-button label="Next" icon="pi pi-angle-right" (click)="next('step1')" iconPos="right"></p-button>
+                </div>
+            </ng-template>
+        </p-card>
+    </div>
+    <div *ngIf="activeIndex===1">
+        <p-card>
+            <ng-template pTemplate="title">
+                User Information
+            </ng-template>
+            <ng-template pTemplate="subtitle">
+                Enter your user information
+            </ng-template>
+            <ng-template pTemplate="content">
+                <form [formGroup]="memberform">
+                    <div class="p-fluid field">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="number" pInputText formControlName="mobile" />
+                    </div>
+                    <div class="p-fluid field">
+                        <label for="email">Email</label>
+                        <input type="email" pInputText formControlName="email" />
+                    </div>
+                    <div class="p-fluid field">
+                        <label for="aachor">Aadhaar Number</label>
+                        <input type="number" pInputText formControlName="aachor" />
+                    </div>
+                </form>
+            </ng-template>
+            <ng-template pTemplate="footer">
+                <div class="grid">
+                    <div class="col-6 lg:col-6 md:col-6  justify-content-start">
+                        <p-button label="Back" icon="pi pi-angle-left"  iconPos="left"></p-button>
+                    </div>
+                    <div class="col-6 lg:col-6 md:col-6  text-right">
+                        <p-button label="Next" icon="pi pi-angle-right" (click)="next('step2')" iconPos="right"></p-button>
+                    </div>
+                </div>
+            </ng-template>
+        </p-card>
+    </div>
+    <div *ngIf="activeIndex===2">
+        <p-card>
+            <ng-template pTemplate="title">
+                User Information
+            </ng-template>
+            <ng-template pTemplate="subtitle">
+                Enter your user information
+            </ng-template>
+            <ng-template pTemplate="content">
+                <form [formGroup]="memberform">
+                    <div class="p-fluid field">
+                        <label for="address">Address</label>
+                        <input type="text" pInputText formControlName="address" />
+                    </div>
+                    <div class="p-fluid field">
+                        <label for="district">District</label>
+                        <input type="text" pInputText formControlName="district" />
+                    </div>
+                    <div class="p-fluid field">
+                        <label for="state">State</label>
+                        <input type="text" pInputText formControlName="state" />
+                    </div>
+                </form>
+            </ng-template>
+            <ng-template pTemplate="footer">
+                <div class="grid">
+                    <div class="col-6 lg:col-6 md:col-6  justify-content-start">
+                        <p-button label="Back" icon="pi pi-angle-left"  iconPos="left"></p-button>
+                    </div>
+                    <div class="col-6 lg:col-6 md:col-6  text-right">
+                        <p-button label="Next" icon="pi pi-angle-right" (click)="next('step3')" iconPos="right"></p-button>
+                    </div>
+                </div>
+            </ng-template>
+        </p-card>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div [@animationsidebar]="layoutservice.isBoolean == true ? 'open' : 'close'">
+    <h1 class="head">Table</h1>
+    <table style="border: 1px solid">
+        <thead>
+            <tr>
+                <th>S.no</th>
+                <th>DateRecevied</th>
+                <th>1_30MinData</th>
+                <th>2_30MinData</th>
+                <th>3_30MinData</th>
+                <th>4_30MinData</th>
+                <th>5_30MinData</th>
+                <th>6_30MinData</th>
+                <th>7_30MinData</th>
+                <th>8_30MinData</th>
+                <th>9_30MinData</th>
+                <th>10_30MinData</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let custom of details;let i = index;">
+                <td>{{ i + 1 }}</td>
+                <td>{{ custom.DateRecevied }}</td>
+                <!-- <td>{{ custom.1_30MinData }}</td>
+                <td>{{ custom.2_30MinData }}</td>
+                <td>{{ custom.3_30MinData }}</td>
+                <td>{{ custom.4_30MinData }}</td>
+                <td>{{ custom.5_30MinData }}</td>
+                <td>{{ custom.6_30MinData }}</td>
+                <td>{{ custom.7_30MinData }}</td>
+                <td>{{ custom.8_30MinData }}</td>
+                <td>{{ custom.9_30MinData }}</td>
+                <td>{{ custom.10_30MinData }}</td>  -->
+            </tr>
+        </tbody>
+    </table>
+</div>

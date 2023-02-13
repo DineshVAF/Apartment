@@ -1,0 +1,16 @@
+<div class=" mt-8 text-50 head" [@animationsidebar]="layoutservice.isBoolean == true ? 'open' : 'close'">
+    <p-carousel [value]="rooms" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true"
+        [autoplayInterval]="2000" [responsiveOptions]="responsiveOptions">
+        <ng-template let-rooms pTemplate="item">
+            <div class="product-item">
+                <div class="product-item-content">
+                    <div class="p-mb-3">
+                    </div>
+                    <div>
+                        <img [src]="rooms.roomimg" width="270px" height="190px">
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>

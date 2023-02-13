@@ -1,0 +1,22 @@
+<div class="grid  text-50 head" [@animationsidebar]="layoutservice.isBoolean == true ? 'open' : 'close'">
+    <div class="col-1 lg:col-1 md:col-1 sm:col-1 text-xl">
+        <i class="fa-solid fa-bars" (click)="toggle()"></i>
+    </div>
+    <div class="col-2 lg:col-2 md:col-2 sm:col-2" *ngIf="img">
+        <img src="./../../../../assets/logo/apartlogo.png">
+    </div>
+    <div class="flex-grow-1">
+
+    </div>
+    <div class="col-2 lg:col-1 md:col-1 sm:col-2 text-xl" >
+        <span><p-inputSwitch  pTooltip="Theme" (onChange)="toggleTheme()" (click)="checked"></p-inputSwitch></span>
+    </div>
+    <div class="col-2 lg:col-1  md:col-1 sm:col-2 text-xl">
+        <i class="fa-solid fa-lock" (click)="openFullscreen()" *ngIf="!Shown"></i>
+        <i class="fa-solid fa-lock-open" (click)="closeFullscreen()" *ngIf="Shown"></i>
+    </div>
+    <div class="col-2 lg:col-1 md:col-1 sm:col-2 user text-xl">
+        <button type="button" pButton icon="pi pi-user"></button>
+
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div [@animationsidebar]="layoutservice.isBoolean == true ? 'open' : 'close'">
+    <p-table [value]="apartment" [rows]="10" [showCurrentPageReport]="true">
+        <ng-template pTemplate="caption">
+
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Mobile No.</th>
+                <th>Door No.</th>
+                <th>Address</th>
+
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-apartment>
+            <tr>
+                <td>{{apartment.Id}}</td>
+                <td>{{apartment.Name}}</td>
+                <td>{{apartment.Mobile}}</td>
+                <td>{{apartment.Door}}</td>
+                <td>{{apartment.Address}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

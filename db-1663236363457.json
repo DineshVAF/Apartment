@@ -1,0 +1,115 @@
+{
+  "apartment": [
+    {
+      "Id": 1,
+      "Name": "Dinesh",
+      "Mobile": 9804567890,
+      "Door": 201,
+      "Address": "302,Nethaji Street,Madurai-11"
+    },
+    {
+      "Id": 2,
+      "Name": "Ranjith",
+      "Mobile": 9889667890,
+      "Door": 202,
+      "Address": "302,Nethaji Street,Madurai-11"
+    },
+    {
+      "Id": 3,
+      "Name": "Sharma",
+      "Mobile": 9804510390,
+      "Door": 203,
+      "Address": "302,Nethaji Street,Madurai-11"
+    },
+    {
+      "Id": 4,
+      "Name": "Bala",
+      "Mobile": 7904373133,
+      "Door": 204,
+      "Address": "302,Nethaji Street,Madurai-11"
+    },
+    {
+      "Id": 5,
+      "Name": "Marimuthu",
+      "Mobile": 9804561230,
+      "Door": 205,
+      "Address": "302,Nethaji Street,Madurai-11"
+    },
+    {
+      "Id": 6,
+      "Name": "Yuva",
+      "Mobile": 9804578090,
+      "Door": 206,
+      "Address": "302,Nethaji Street,Madurai-11"
+    },
+    {
+      "Id": 7,
+      "Name": "Yogesh",
+      "Mobile": 9804039790,
+      "Door": 207,
+      "Address": "302,Nethaji Street,Madurai-11"
+    },
+    {
+      "Id": 8,
+      "Name": "Kavirajan",
+      "Mobile": 9801236780,
+      "Door": 208,
+      "Address": "302,Nethaji Street,Madurai-11"
+    },
+    {
+      "Id": 9,
+      "Name": "Basva",
+      "Mobile": 9804567890,
+      "Door": 209,
+      "Address": "302,Nethaji Street,Madurai-11"
+    },
+    {
+      "Id": 10,
+      "Name": "Ganesh",
+      "Mobile": 9804567890,
+      "Door": 210,
+      "Address": "302,Nethaji Street,Madurai-11"
+    }
+  ],
+  "room": [
+    {
+      "roomimg": "./assets/room-img/bed-wall.jpg"
+    },
+    {
+      "roomimg": "./assets/room-img/hall-hotel.jpg"
+    },
+    {
+      "roomimg": "./assets/room-img/Living Room.png"
+    },
+    {
+      "roomimg": "./assets/room-img/dining-room.jpg"
+    },
+    {
+      "roomimg": "./assets/room-img/Interior-room.jpeg"
+    },
+    {
+      "roomimg": "./assets/room-img/kitchen-hotel.jpg"
+    },
+    {
+      "roomimg": "./assets/room-img/Miller-LR_1.webp"
+    },
+    {
+      "roomimg": "./assets/room-img/design bathroom.jpg"
+    },
+    {
+      "roomimg": "./assets/room-img/Contemporary-bathroom.jpg"
+    },
+    {
+      "roomimg": "./assets/room-img/interior-design.png"
+    },
+    {
+      "roomimg": "./assets/room-img/bedroom.jpg"
+    },
+    {
+      "roomimg": "./assets/room-img/hotel-bathroom.png"
+    }
+  ],
+  "details": [
+    {}
+  ]
+}

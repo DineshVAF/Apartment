@@ -1,0 +1,19 @@
+$bg-theme-light: #fff;
+$color-theme-light: #222;
+
+$bg-theme-dark: #222;
+$color-theme-dark: #fff;
+
+body[theme='light'] {
+    width: 100%;
+   
+    background-color: $bg-theme-light  !important;
+    color: $color-theme-light;
+}
+
+body[theme="dark"] {
+    width: 100%;
+   
+    background-color: $bg-theme-dark  !important;
+    color: $color-theme-dark;
+}
